@@ -2,7 +2,7 @@ import React from 'react'
 
 const Information = () => {
   return (
-    <div className="information-container">
+    <div className="information-container" id="info">
       <div className="wrapper">
         <div className="column">
           <h6>Contact us</h6>

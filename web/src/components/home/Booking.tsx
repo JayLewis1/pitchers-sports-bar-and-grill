@@ -16,7 +16,7 @@ const Booking: React.FC = () => {
     // TODO: Send data to server with axios and handle with nodemailer
   }
   return (
-    <div className="booking-container">
+    <div className="booking-container" id="booking">
       <div className="wrapper">
         <div className="text-wrapper">
           <h4>Make a Booking</h4>

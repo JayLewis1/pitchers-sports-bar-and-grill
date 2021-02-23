@@ -18,12 +18,12 @@ const Landing: React.FC  = () => {
               <p>View menus</p>
             </Link></li>
             <li className="no-bg">
-            <a href="#bookin">
+            <a href="#booking">
               <span className="btn-bg"></span>
               <p>Make a booking</p></a>
           </li>
           <li className="no-bg" id="hideBtn">
-            <a href="#information">
+            <a href="#info">
               <span className="btn-bg"></span>
               <p>Bar information</p></a>
           </li>

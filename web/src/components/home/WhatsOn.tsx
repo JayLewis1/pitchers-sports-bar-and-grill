@@ -2,7 +2,7 @@ import React from 'react'
 
 const WhatsOn = () => {
   return (
-    <div className="whatson-container">
+    <div className="whatson-container" id="whatson">
         <h5>What's going on</h5>
         <ul className="carousel-wrapper">
             <li>

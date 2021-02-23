@@ -33,7 +33,7 @@ const HomeGallery = ({gallery, toggleGallery} : Props) => {
   }
   
   return (
-    <div className="gallery-home-container">
+    <div className="gallery-home-container" id="gallery">
         <div className="wrapper">
           <ul className="gallery-grid">
             <li className="item-1">

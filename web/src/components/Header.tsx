@@ -49,7 +49,9 @@ const Header: React.FC = () => {
           <nav>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/">About</Link></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#whatson">What's on</a></li>
+              <li><a href="#info">Info</a></li>
               <li>
                 <button onClick={() => dropDownMenuSelection()}>Menus</button>
           
@@ -90,7 +92,7 @@ const Header: React.FC = () => {
                 }</li>
               <li className="contact-link">
                 <span className="btn-bg"></span>
-                <Link to="/">Contact</Link>
+                <a href="#booking">Contact</a>
               </li>
             </ul>
           </nav>
@@ -111,7 +113,9 @@ const Header: React.FC = () => {
                > 
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/">About</Link></li>
+              <li><Link to="/">Gallery</Link></li>
+              <li><Link to="/">What's on</Link></li>
+              <li><Link to="/">Info</Link></li>
               <li><Link to="/">Menus</Link></li>
               <li><Link to="/">Contact</Link></li>
             </ul>
