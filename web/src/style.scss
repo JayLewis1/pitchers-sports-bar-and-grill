@@ -1,0 +1,19 @@
+$bg : #0F110D;
+$text : #16161A;
+$textMed: #B4B5B3;
+$white: #FCFCFC;
+$purple: #912070;
+// $purple: #5F03BA;
+$font: 'Work Sans', sans-serif;
+
+@import "./sass/main";
+@import "./sass/header";
+@import "./sass/home/landing";
+@import "./sass/home/bio";
+@import "./sass/home/menuSelection";
+@import "./sass/home/booking";
+@import "./sass/home/homegallery";
+@import "./sass/home/information";
+@import "./sass/home/whatsOn";
+@import "./sass/home/map";
+@import "./sass/footer";
