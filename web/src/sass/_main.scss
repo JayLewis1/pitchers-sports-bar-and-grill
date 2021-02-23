@@ -6,7 +6,8 @@
 }
 
 body {
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
   background-color: $white;
   font-family: $font;
   color: $text;
