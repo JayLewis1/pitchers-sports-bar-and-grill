@@ -1162,10 +1162,6 @@ body .btn-bg {
 .gallery-home-container .wrapper .gallery-grid li {
   list-style-type: none;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: stretch;
   position: relative;
   overflow: hidden;
 }
