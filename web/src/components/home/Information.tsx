@@ -17,7 +17,7 @@ const Information = () => {
               <span className="img-wrapper">
                 <img src="/assets/icons/email-black.svg" alt="Email"/>
               </span>
-              <p>Pitchers@email.co.uk</p>
+              <p>Pitcherssportsbarandgrill@gmail.com</p>
             </span>
           </div>
           <h6>Keep Connected</h6>

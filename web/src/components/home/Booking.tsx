@@ -34,7 +34,7 @@ const Booking: React.FC = () => {
             <span className="img-wrapper">
               <img  className="email-icon" src="/assets/icons/email.svg" alt="Email"/>
             </span>
-            <p>Pitchers@email.co.uk</p>
+            <p>Pitcherssportsbarandgrill@gmail.com</p>
           </span>
         </div>
         <div className="form-wrapper">
