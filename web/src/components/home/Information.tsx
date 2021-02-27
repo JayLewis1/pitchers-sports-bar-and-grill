@@ -22,9 +22,9 @@ const Information = () => {
           </div>
           <h6>Keep Connected</h6>
           <ul className="social-icons">
-            <li><a href="/"><img src="/assets/icons/facebook-black.svg" alt="Facebook"/></a></li>
-            <li><a href="/"><img src="/assets/icons/instagram-black.svg" alt="Instagram"/></a></li>
-            <li><a href="/"><img src="/assets/icons/twitter-black.svg" alt="Twitter"/></a></li>
+            <li><a href="/https://www.facebook.com/pitcherssportsbarchepstow"><img src="/assets/icons/facebook-black.svg" alt="Facebook"/></a></li>
+            {/* <li><a href="/"><img src="/assets/icons/instagram-black.svg" alt="Instagram"/></a></li> */}
+            <li><a href="/https://twitter.com/GrillPitchers?fbclid=IwAR1DheqOt8GBR_dqqv8c4LIrZ8IqEsTFkRXsTUf9rek-Z6bwWieVdN4Srfc"><img src="/assets/icons/twitter-black.svg" alt="Twitter"/></a></li>
           </ul>
         </div>
         <div className="column"  id="openingTimes">

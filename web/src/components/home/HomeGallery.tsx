@@ -36,7 +36,7 @@ const HomeGallery = ({gallery, toggleGallery} : Props) => {
     <div className="gallery-home-container" id="gallery">
         <div className="wrapper">
           <ul className="gallery-grid">
-            <li className="item-1">
+            <li className="item-1 gallery-image">
               <img src="/assets/photos/g1@2x.jpg" alt="Our bar"/>
               <span className="img-hover">
                 <button className="gallery-link"
@@ -46,7 +46,7 @@ const HomeGallery = ({gallery, toggleGallery} : Props) => {
                  </button>
               </span>
             </li>
-            <li className="item-2">
+            <li className="item-2 gallery-image">
               <img src="/assets/photos/g2@2x.jpg" alt="Food"/>
               <span className="img-hover">
                 <button className="gallery-link"
@@ -56,7 +56,7 @@ const HomeGallery = ({gallery, toggleGallery} : Props) => {
                  </button>
               </span>
             </li>
-            <li className="item-3">
+            <li className="item-3 gallery-image">
               <img src="/assets/photos/g3@2x.jpg" alt="Our Bar"/>
               <span className="img-hover">
                 <button className="gallery-link"
@@ -66,7 +66,7 @@ const HomeGallery = ({gallery, toggleGallery} : Props) => {
                  </button>
               </span>
             </li>
-            <li className="item-4">
+            <li className="item-4 gallery-image">
               <img src="/assets/photos/g4@2x.jpg" alt="Cocktails"/>
               <span className="img-hover">
                 <button className="gallery-link"
@@ -76,7 +76,7 @@ const HomeGallery = ({gallery, toggleGallery} : Props) => {
                  </button>
               </span>
             </li>
-            <li className="item-5">
+            <li className="item-5  gallery-image">
               <img src="/assets/photos/g5@2x.jpg" alt="Chicken wings"/>
               <span className="img-hover">
                 <button className="gallery-link"
@@ -93,7 +93,7 @@ const HomeGallery = ({gallery, toggleGallery} : Props) => {
           </Link>
         </div>
         { gallery.toggle === true &&
-           <GalleryPopup index={imgIndex} /> 
+           <GalleryPopup index={imgIndex} from={"home"}/> 
         }
     </div>
   )

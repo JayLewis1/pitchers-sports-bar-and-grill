@@ -8,7 +8,6 @@ import HomeGallery from "../components/home/HomeGallery";
 import WhatsOn from "../components/home/WhatsOn";
 import Information from "../components/home/Information";
 import Map from "../components/home/Map";
-import Footer from "../components/home/Footer";
 
 const Home: React.FC = () => {
   return (
@@ -21,7 +20,6 @@ const Home: React.FC = () => {
         <WhatsOn />
         <Information />
         <Map />
-        <Footer />
     </Fragment>
   )
 }

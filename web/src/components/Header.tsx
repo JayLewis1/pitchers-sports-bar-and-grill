@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [menusDown, setMenusDown] = useState(false);
@@ -48,10 +48,10 @@ const Header: React.FC = () => {
           </span>  
           <nav>
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/gallery">Gallery</Link></li>
-              <li><Link to="/#whatson">What's on</Link></li>
-              <li><Link to="/#info">Info</Link></li>
+              <li><NavLink activeClassName="link-active" exact to="/">Home</NavLink></li>
+              <li><NavLink activeClassName="link-active" exact to="/gallery">Gallery</NavLink></li>
+              <li><a href="/#whatson">What's on</a></li>
+              <li><a href="/#info">Info</a></li>
               <li>
                 <button onClick={() => dropDownMenuSelection()}>Menus</button>
           
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
                     <li
                       onMouseOver={() => setTypeOnHover("food")}
                       onMouseOut={() => setTypeOnHover("")}
-                    ><Link to="/menus/food">
+                    ><NavLink to="/menus/food">
                       { menuType === "food" ?  
                         <img src="/assets/menu/cutlery-p.svg" alt="Food"/>
                         :
@@ -72,11 +72,11 @@ const Header: React.FC = () => {
                         <h2>Food</h2>
                         <p>Burgers, Pizza, Grill, vegetaraian and more.</p> 
                       </span>
-                    </Link></li>
+                    </NavLink></li>
                     <li
                       onMouseOver={() => setTypeOnHover("drinks")}
                       onMouseOut={() => setTypeOnHover("")}
-                    ><Link to="/menus/drinks">
+                    ><NavLink to="/menus/drinks">
                      { menuType === "drinks" ?  
                         <img src="/assets/menu/cocktail-p.svg" alt="Drinks"/>
                         :
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
                       <h2>Drinks</h2>
                       <p>Beers, Cocktails, Spirits and more.</p>  
                     </span>                   
-                      </Link></li>
+                      </NavLink></li>
                   </ul>
                 </div>
                 }</li>
@@ -112,12 +112,12 @@ const Header: React.FC = () => {
               style={windowSize.width >= 620 || burgerMenu === false ? {height: "0px"} : { height: "300px"}}
                > 
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/gallery">Gallery</Link></li>
-              <li><Link to="/#whatson">What's on</Link></li>
-              <li><Link to="/#info">Info</Link></li>
-              <li><Link to="/menus">Menus</Link></li>
-              <li><Link to="/">Contact</Link></li>
+              <li><NavLink activeClassName="link-active" exact to="/">Home</NavLink></li>
+              <li><NavLink activeClassName="link-active" to="/gallery">Gallery</NavLink></li>
+              <li><a href="/#whatson">What's on</a></li>
+              <li><a href="/#info">Info</a></li>
+              <li><NavLink activeClassName="link-active" to="/menus">Menus</NavLink></li>
+              <li><NavLink activeClassName="link-active" exact to="/contact">Contact</NavLink></li>
             </ul>
           </nav>
         </div>   

@@ -44,6 +44,10 @@
             a:hover {
               color: $purple;
             }
+            .footer-active-link {
+              color: $purple;
+              font-weight: 500;
+            }
           }
         }
         .social-container {
@@ -81,6 +85,10 @@
         margin-left: auto;
         .highlight {
           color: $white;
+          text-decoration: none;
+        }
+        .highlight:hover {
+          color: $purple;
         }
       }
     }

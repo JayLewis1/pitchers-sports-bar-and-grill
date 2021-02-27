@@ -134,7 +134,7 @@
     }
   }
 }
-@media (max-width: 310px) {
+@media (max-width: 465px) {
   .hero-wrapper {
     .center-wrapper {
       .text-wrapper {
@@ -173,18 +173,6 @@
     display: none;
   }
 }
-
-// @media (max-width: 700px) {
-//   .landing-links {
-//     width: 100%;
-//     ul {
-//       grid-template-columns: repeat(2, 1fr);
-//       .hide-btn {
-//         display: none;
-//       }
-//     }
-//   }
-// }
 
 @media (max-width: 1100px) {
   .hero-wrapper {

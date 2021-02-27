@@ -13,7 +13,7 @@ const Landing: React.FC  = () => {
           <img src="/assets/logo.svg" alt="Pitchers Logo"/> 
           <ul className="link-wrapper">
           <li>
-            <Link to="/" className="highlight">
+            <Link to="/menus" className="highlight">
               <span className="btn-bg"></span>
               <p>View menus</p>
             </Link></li>
