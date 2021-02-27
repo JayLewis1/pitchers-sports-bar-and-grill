@@ -35,8 +35,6 @@ const Gallery = ({gallery, toggleGallery} : Props) => {
     let index: number;
     for(let x = 0; x < galleryImages.length; x++) {
         if(galleryImages[x].url === imgUrl) {
-          console.log(imgUrl)
-          console.log(galleryImages[x].url)
           index = galleryImages.indexOf(galleryImages[x]);
           setImgIndex(index+1);
           toggleGallery(true);
@@ -53,7 +51,6 @@ const Gallery = ({gallery, toggleGallery} : Props) => {
       }
       imgUrlArray.push(newObject)
     }; 
-    console.log(imgUrlArray)
     setImgageUrls(imgUrlArray)
   }
 
@@ -70,7 +67,6 @@ const Gallery = ({gallery, toggleGallery} : Props) => {
         index = editableArray.indexOf(editableArray[x])
         editableArray.splice(index, 1, loadedObject)
         setImgageUrls(editableArray);
-        console.log(galleryImages);
       }
     }
   }
