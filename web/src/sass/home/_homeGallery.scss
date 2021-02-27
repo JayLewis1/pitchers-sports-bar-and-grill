@@ -19,6 +19,7 @@
       li {
         list-style-type: none;
         width: 100%;
+        display: flex;
         position: relative;
         overflow: hidden;
         img {
@@ -193,6 +194,11 @@
     .wrapper {
       .gallery-link {
         margin: 35px auto;
+      }
+      .gallery-grid {
+        li {
+          display: block;
+        }
       }
     }
   }

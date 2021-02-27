@@ -49,9 +49,9 @@ const Header: React.FC = () => {
           <nav>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#whatson">What's on</a></li>
-              <li><a href="#info">Info</a></li>
+              <li><Link to="/gallery">Gallery</Link></li>
+              <li><Link to="/#whatson">What's on</Link></li>
+              <li><Link to="/#info">Info</Link></li>
               <li>
                 <button onClick={() => dropDownMenuSelection()}>Menus</button>
           
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
                     <li
                       onMouseOver={() => setTypeOnHover("food")}
                       onMouseOut={() => setTypeOnHover("")}
-                    ><Link to="/">
+                    ><Link to="/menus/food">
                       { menuType === "food" ?  
                         <img src="/assets/menu/cutlery-p.svg" alt="Food"/>
                         :
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
                     <li
                       onMouseOver={() => setTypeOnHover("drinks")}
                       onMouseOut={() => setTypeOnHover("")}
-                    ><Link to="/">
+                    ><Link to="/menus/drinks">
                      { menuType === "drinks" ?  
                         <img src="/assets/menu/cocktail-p.svg" alt="Drinks"/>
                         :
@@ -109,14 +109,14 @@ const Header: React.FC = () => {
             </button>
           </span>
           <nav className="responsive-menu" 
-              style={windowSize.width >= 620 || burgerMenu === false ? {height: "0px"} : { height: "200px"}}
+              style={windowSize.width >= 620 || burgerMenu === false ? {height: "0px"} : { height: "300px"}}
                > 
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/">Gallery</Link></li>
-              <li><Link to="/">What's on</Link></li>
-              <li><Link to="/">Info</Link></li>
-              <li><Link to="/">Menus</Link></li>
+              <li><Link to="/gallery">Gallery</Link></li>
+              <li><Link to="/#whatson">What's on</Link></li>
+              <li><Link to="/#info">Info</Link></li>
+              <li><Link to="/menus">Menus</Link></li>
               <li><Link to="/">Contact</Link></li>
             </ul>
           </nav>

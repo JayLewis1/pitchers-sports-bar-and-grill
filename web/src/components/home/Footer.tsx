@@ -25,11 +25,11 @@ const Footer = () => {
               <li><a>Food</a></li>
             </ul>
           </div>
-          <div className="list-wrapper">
+          <div className="list-wrapper" id="contact-list">
             <p className="heading">Contact</p>
             <ul>
               <li><p>01291 428013</p></li>
-              <li><p>Pitchers@email.co.uk</p></li>
+              <li><p>Pitcherssportsbarandgrill@gmail.com</p></li>
             </ul>
             <span className="social-container">
                 <Link to="/" 

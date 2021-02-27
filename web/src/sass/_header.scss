@@ -9,7 +9,7 @@
     width: 1100px;
     height: 100%;
     display: flex;
-    margin: auto;;
+    margin: auto;
     position: relative;
     .logo {
       width: 105px;
@@ -29,8 +29,9 @@
           list-style-type: none;
           margin-left: 20px;
           position: relative;
-          
-          a, button{
+
+          a,
+          button {
             background: none;
             outline: none;
             border: none;
@@ -41,7 +42,7 @@
             cursor: pointer;
             z-index: 2;
           }
-          a:hover{ 
+          a:hover {
             color: $purple;
           }
           button:hover {
@@ -49,17 +50,17 @@
           }
           .menus-drop-down {
             position: absolute;
-            width: 270px; 
+            width: 270px;
             background-color: $bg;
             // box-shadow: 0 3px 20px rgba(15,17,13, 0.2);
-            box-shadow: 0 0px 10px rgba(100,100,100, 0.1);
+            box-shadow: 0 0px 10px rgba(100, 100, 100, 0.1);
             padding: 10px 0;
             border-radius: 3px;
             top: 60px;
             left: 50%;
             transform: translate(-50%, 0);
             z-index: 50;
-       
+
             .menu-triangle {
               width: 20px;
               height: 20px;
@@ -67,10 +68,10 @@
               border: 2px red solid;
               border-bottom: 10px solid $bg;
               border-top: 10px solid transparent;
-              border-left: 10px solid transparent; 
-              border-right:10px solid transparent; 
+              border-left: 10px solid transparent;
+              border-right: 10px solid transparent;
               left: 50%;
-              transform : translate(-50%, 0);
+              transform: translate(-50%, 0);
               top: -19px;
               z-index: 51;
             }
@@ -94,13 +95,13 @@
                     margin-top: 5px;
                   }
                   span {
-                    h2{ 
-                      font-size: 1.1rem; 
+                    h2 {
+                      font-size: 1.1rem;
                       font-weight: 500;
                       margin-bottom: 5px;
                     }
                     p {
-                      font-size: 0.9rem; 
+                      font-size: 0.9rem;
                       font-weight: 300;
                     }
                   }
@@ -109,10 +110,10 @@
                   color: $white;
                 }
               }
-              li:hover { 
+              li:hover {
                 background-color: $white;
                 a {
-                  color: $purple
+                  color: $purple;
                 }
               }
             }
@@ -121,23 +122,23 @@
         .contact-link {
           margin-left: 35px;
           background-color: $purple;
-          padding: 8px 20px;
+          padding: 8px 25px;
           border-radius: 1px;
           position: relative;
           cursor: pointer;
           overflow: hidden;
           z-index: 1;
-          a{ 
+          a {
             position: relative;
             z-index: 2;
           }
         }
         .contact-link:hover {
-          a{ 
+          a {
             color: $purple;
             font-weight: 500;
           }
-          .btn-bg  {
+          .btn-bg {
             min-width: 100%;
           }
         }
@@ -191,7 +192,7 @@
   }
 }
 
-@media(max-width: 620px) {
+@media (max-width: 620px) {
   .header {
     .wrapper {
       nav {
@@ -204,7 +205,7 @@
   }
 }
 
-@media(max-width: 1100px) {
+@media (max-width: 1100px) {
   .header {
     .wrapper {
       width: 100%;

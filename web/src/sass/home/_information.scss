@@ -1,14 +1,14 @@
 .information-container {
   width: 100%;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   .wrapper {
     width: 1100px;
     margin: 0 auto;
-    padding: 100px 30px;;
+    padding: 100px 40px;
     display: flex;
-    .column { 
-      width: 25%;
-      margin-right: 10%;
+    .column {
+      width: 30%;
+      // margin-right: 5%;
       h6 {
         font-size: 1.2rem;
         font-weight: 700;
@@ -17,7 +17,7 @@
         text-transform: uppercase;
       }
       .contact-wrapper {
-        margin-bottom: 50px;;
+        margin-bottom: 50px;
         .info-wrapper {
           display: flex;
           width: 100%;
@@ -36,6 +36,7 @@
             font-size: 1rem;
             font-weight: 400;
             color: $bg;
+            word-break: break-all;
           }
         }
       }
@@ -46,7 +47,8 @@
           margin-right: 15px;
         }
       }
-      .opening-times, .facilities {
+      .opening-times,
+      .facilities {
         width: 100%;
         li {
           list-style-type: none;
@@ -58,37 +60,56 @@
           }
         }
       }
-
     }
   }
 }
 
-@media (max-width: 400px) {
+// @media (max-width: 400px) {
+//   .information-container {
+//     .wrapper {
+//       display: flex;
+//       flex-direction: column;
+//       padding: 50px 10%;
+//       .column {
+//         width: 100%;
+//         margin-bottom: 50px;
+//       }
+//       #facilities {
+//         grid-row-start: 1;
+//         grid-column-start: 2;
+//       }
+//     }
+//   }
+// }
+@media (max-width: 580px) {
   .information-container {
     .wrapper {
       display: flex;
       flex-direction: column;
-      padding:  50px 10%;
+      padding: 50px 10%;
       .column {
         width: 100%;
         margin-bottom: 50px;
       }
       #facilities {
-        grid-row-start:1;
-        grid-column-start:2;
+        grid-row-start: 1;
+        grid-column-start: 2;
       }
     }
   }
 }
-@media (min-width: 401px) and (max-width: 850px) {
+@media (min-width: 580px) and (max-width: 850px) {
   .information-container {
     .wrapper {
       display: grid;
-      grid-template-columns: repeat(2, 1fr );
-      padding:  100px 10%;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 100px 25px;
+      width: 100%;
+      gap: 3%;
       .column {
         width: 100%;
         margin-bottom: 50px;
+        padding: 0 15px;
         .contact-wrapper {
           .info-wrapper {
             .img-wrapper {
@@ -98,15 +119,26 @@
         }
       }
       #facilities {
-        // grid-row-start:1;
-        // grid-column-start:2;
+        grid-row-start: 1;
+        grid-column-start: 2;
         padding-left: 10%;
         margin: 0;
       }
       #openingTimes {
-        grid-row-start:2;
-        grid-column-start:1;
-        grid-column-end:3;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1100px) {
+  .information-container {
+    .wrapper {
+      #openingTimes {
+        margin: 0 5%;
       }
     }
   }
