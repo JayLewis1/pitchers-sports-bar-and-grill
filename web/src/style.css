@@ -2312,4 +2312,62 @@ body .btn-bg {
     width: 100%;
   }
 }
+
+.not-found-container {
+  height: 80vh;
+  width: 100%;
+  background-color: #0f110d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 5%;
+}
+
+.not-found-container h3 {
+  color: #fcfcfc;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.not-found-container p {
+  color: #fcfcfc;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.not-found-container a {
+  background-color: #912070;
+  color: #fcfcfc;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.not-found-container a p {
+  color: #fcfcfc;
+  font-size: 1rem;
+  margin: 0;
+  position: relative;
+}
+
+.not-found-container a:hover p {
+  color: #912070;
+}
+
+.not-found-container a:hover .btn-bg {
+  min-width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

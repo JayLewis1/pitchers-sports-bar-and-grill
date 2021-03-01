@@ -7,6 +7,7 @@ import Menus from "./routes/Menus";
 import Gallery from "./routes/Gallery";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
+import NotFound from "./routes/NotFound";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/menus" component={Menus} />
           <Route exact path="/menus/:type" component={Menus} />
-          <Route exact path="/gallery" component={Gallery} />
+          <Route path="/gallery" component={Gallery} />
+          <Route component={NotFound} />
         </Switch>
         <Footer />
       </div>
