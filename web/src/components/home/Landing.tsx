@@ -1,7 +1,13 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useRef } from 'react'
 import { Link } from "react-router-dom";
 
 const Landing: React.FC  = () => {
+  const logoImage = useRef(null);
+
+  useEffect(() => {
+    console.log(logoImage)
+  }, [logoImage])
+
   return (
     <Fragment>
     <div className="hero-wrapper">
@@ -10,7 +16,14 @@ const Landing: React.FC  = () => {
           <img src="/assets/photos/home-img@2x.jpg" alt="Our Bar"/>
         </div>
         <div className="text-wrapper">
-          <img src="/assets/logo.svg" alt="Pitchers Logo"/> 
+          <img 
+            src="/assets/logo.svg" 
+            alt="Pitchers Logo"
+            ref={logoImage}/> 
+            {/* { logoImage!.current! !== null  && 
+              <span style={logoImage!.current!.img.loaded ? {display: "none"} : {display: "flex"} }>
+              </span>
+            } */}
           <ul className="link-wrapper">
           <li>
             <Link to="/menus" className="highlight">

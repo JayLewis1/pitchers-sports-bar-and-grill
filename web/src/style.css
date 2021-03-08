@@ -343,6 +343,7 @@ body .btn-bg {
 
 .hero-wrapper .center-wrapper .img-wrapper {
   width: 80%;
+  min-height: 200px;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -382,6 +383,7 @@ body .btn-bg {
 
 .hero-wrapper .center-wrapper .text-wrapper img {
   width: 200px;
+  height: 100px;
   margin: 10px 0;
 }
 
@@ -1899,7 +1901,6 @@ body .btn-bg {
   position: relative;
   width: 100% !important;
   width: 100%;
-  max-width: 200px;
   height: 100%;
   z-index: 2;
 }

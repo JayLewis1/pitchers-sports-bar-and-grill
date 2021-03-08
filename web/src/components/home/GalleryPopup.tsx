@@ -42,7 +42,7 @@ const GalleryPopup = ({index, toggleGallery,from }:Props ) => {
       } else {
         setImgIndex(newIndex);
       }
-  }
+  } 
   const changeImgRight = () => {
     let newIndex = imgIndex + 1;
     if(from === "home" && newIndex > 5) {
@@ -66,7 +66,7 @@ const GalleryPopup = ({index, toggleGallery,from }:Props ) => {
   return (
     <div className="gallery-popup">
        { from === "home" &&  <img src={`/assets/photos/g${imgIndex}@2x.jpg`} alt="Gallery Item"/>}
-          { from === "gallery" && <img src={`/assets/gallery/p${imgIndex}@2x.jpg`} alt="Gallery Item"/>}
+          { from === "gallery" && <img src={`/assets/gallery/p${imgIndex}.jpg`} alt="Gallery Item"/>}
           <span className="button-wrapper">
           <button onClick={() => changeImgLeft()}>
             <img src="/assets/icons/arrow.svg" alt="Left arrow"/>
