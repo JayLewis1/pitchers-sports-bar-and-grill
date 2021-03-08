@@ -46,7 +46,7 @@ const Gallery = ({gallery, toggleGallery} : Props) => {
     let imgUrlArray: any = []
     for(let x = 1; x <= 29; x++ ){
       let newObject = {
-        url : `/assets/gallery/p${x}@2x.jpg`,
+        url : `/assets/gallery/p${x}.jpg`,
         loaded: false 
       }
       imgUrlArray.push(newObject)

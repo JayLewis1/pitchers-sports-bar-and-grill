@@ -1898,6 +1898,8 @@ body .btn-bg {
 .gallery-image img {
   position: relative;
   width: 100% !important;
+  width: 100%;
+  max-width: 200px;
   height: 100%;
   z-index: 2;
 }
@@ -1915,7 +1917,7 @@ body .btn-bg {
     column-count: 2;
     column-gap: 10px;
   }
-  .gallery-container .wrapper .gallery-grid .img-wrapper {
+  .gallery-container .wrapper .gallery-grid .gallery-image {
     margin-bottom: 10px;
   }
 }
@@ -1929,7 +1931,7 @@ body .btn-bg {
     column-count: 3;
     column-gap: 10px;
   }
-  .gallery-container .wrapper .gallery-grid .img-wrapper {
+  .gallery-container .wrapper .gallery-grid .gallery-image {
     margin-bottom: 10px;
   }
 }
@@ -1943,7 +1945,7 @@ body .btn-bg {
     column-count: 4;
     column-gap: 10px;
   }
-  .gallery-container .wrapper .gallery-grid .img-wrapper {
+  .gallery-container .wrapper .gallery-grid .gallery-image {
     margin-bottom: 10px;
   }
 }
