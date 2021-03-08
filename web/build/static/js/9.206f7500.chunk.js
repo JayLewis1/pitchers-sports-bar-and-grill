@@ -1,0 +1,2 @@
+(this["webpackJsonpmy-app"]=this["webpackJsonpmy-app"]||[]).push([[9],{46:function(e,c,n){"use strict";n.r(c);n(0);var s=n(19),t=n(3);c.default=function(){return Object(t.jsxs)("div",{className:"not-found-container",children:[Object(t.jsx)("h3",{children:"404 Page not found"}),Object(t.jsx)("p",{children:"Head back home by clicking down below."}),Object(t.jsxs)(s.b,{to:"/",children:[Object(t.jsx)("span",{className:"btn-bg"}),Object(t.jsx)("p",{children:"Back home"})]})]})}}}]);
+//# sourceMappingURL=9.206f7500.chunk.js.map
