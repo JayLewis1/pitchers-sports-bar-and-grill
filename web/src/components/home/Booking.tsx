@@ -20,8 +20,8 @@ const Booking: React.FC = () => {
       <div className="wrapper">
         <div className="text-wrapper">
           <h4>Make a Booking</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, risus ac ullamcorper scelerisque, libero Consectetur adipiscing elit. Cras eleifend, risus ac ullamcorper scelerisque, libero ipsum aliquam turpis, ac dapibus velit nisl eu magna.
+          <p className="booking-info-p">
+            If you want to book a table for an evening, the bar for a function or just have any questions get in contact. You can use the form provided or reach us on any of our contact details shown down below.
           </p>
           <p className="sub-heading">You can give us a call or email</p>
           <span className="p-wrapper">

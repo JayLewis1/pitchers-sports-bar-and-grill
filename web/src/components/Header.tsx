@@ -50,8 +50,6 @@ const Header: React.FC = () => {
             <ul>
               <li><NavLink activeClassName="link-active" exact to="/">Home</NavLink></li>
               <li><NavLink activeClassName="link-active" exact to="/gallery">Gallery</NavLink></li>
-              <li><a href="/#whatson">What's on</a></li>
-              <li><a href="/#info">Info</a></li>
               <li>
                 <button onClick={() => dropDownMenuSelection()}>Menus</button>
           

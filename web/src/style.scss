@@ -4,7 +4,8 @@ $textMed: #b4b5b3;
 $white: #fcfcfc;
 $purple: #912070;
 // $purple: #5F03BA;
-$font: "Work Sans", sans-serif;
+// $font: "Work Sans", sans-serif;
+$font: 'Karla', sans-serif;
 
 @import "./sass/main";
 @import "./sass/header";
@@ -19,5 +20,6 @@ $font: "Work Sans", sans-serif;
 @import "./sass/menus/menus";
 @import "./sass/gallery/gallery";
 @import "./sass/galleryPopup";
+@import "./sass/contact/contact";
 @import "./sass/footer";
 @import "./sass/404/notFound";

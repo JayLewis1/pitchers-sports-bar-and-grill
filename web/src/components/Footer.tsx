@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const [iconHover, setIconHover] = useState({type: ""})
+  const [showContact, setShowContact] = useState(false);
   return (
     <div className="footer">
       <div className="wrapper"> 
@@ -13,9 +14,7 @@ const Footer = () => {
               <li><NavLink activeClassName="footer-active-link" exact to="/">Home</NavLink></li>
               <li><NavLink activeClassName="footer-active-link" exact to="/gallery">Gallery</NavLink></li>
               <li><NavLink activeClassName="footer-active-link" to="/menus">Menus</NavLink></li>
-              <li><a href="/#booking">Booking</a></li>
-              <li><a href="/#info">Information</a></li>
-              <li><a href="/#location">Location</a></li>
+              <li><NavLink activeClassName="footer-active-link" to="/contact">contact</NavLink></li>
             </ul>
           </div>
           <div className="list-wrapper">
@@ -38,11 +37,6 @@ const Footer = () => {
                 >
                   <img src={`/assets/icons/facebook${iconHover.type === "facebook" ? "-hover" : ""}.svg`}  alt="Facebook"/>
                 </a>
-                {/* <a href="/"
-                  onMouseOver={() => setIconHover({type:"instagram"})}
-                  onMouseOut={() => setIconHover({type:""})}>
-                  <img src={`/assets/icons/instagram${iconHover.type === "instagram" ? "-hover" : ""}.svg`} alt="Instagram"/>
-                </a> */}
                 <a href="/https://twitter.com/GrillPitchers?fbclid=IwAR1DheqOt8GBR_dqqv8c4LIrZ8IqEsTFkRXsTUf9rek-Z6bwWieVdN4Srfc"
                   onMouseOver={() => setIconHover({type:"twitter"})}
                   onMouseOut={() => setIconHover({type:""})}>

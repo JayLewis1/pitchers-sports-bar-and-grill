@@ -18,10 +18,17 @@
         border: 5px $purple solid;
       }
     }
-    p {
-      color: $textMed;
-      width: 80%;
-      padding: 10px;
+  
+    #stick-to-cursor {
+      width: 250px;
+      padding: 15px;
+      background-color: $bg;
+      border-radius: 12px;
+      p {
+        color: $textMed;
+        width: 80%;
+        // padding: 10px;
+      }
     }
   }
 }

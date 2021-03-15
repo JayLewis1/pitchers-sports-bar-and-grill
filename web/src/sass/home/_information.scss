@@ -11,7 +11,7 @@
       // margin-right: 5%;
       h6 {
         font-size: 1.2rem;
-        font-weight: 700;
+        font-weight: 800;
         color: $bg;
         margin-bottom: 25px;
         text-transform: uppercase;
@@ -148,6 +148,17 @@
   .information-container {
     .wrapper {
       width: 100%;
+    }
+  }
+}
+
+
+@media (min-width: 1101px) {
+  .information-container {
+    .wrapper {
+      #openingTimes {
+        margin: 0 5%;
+      }
     }
   }
 }

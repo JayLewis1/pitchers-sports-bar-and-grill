@@ -6,6 +6,7 @@ const  Home = React.lazy(() =>  import("./routes/Home"));
 const Menus = React.lazy(() =>  import("./routes/Menus"));
 const Gallery = React.lazy(() =>  import("./routes/Gallery"));
 const ScrollToTop  = React.lazy(() =>  import("./components/ScrollToTop"));
+const Contact = React.lazy(() => import("./components/contact/Contact"));
 const Footer  = React.lazy(() =>  import("./components/Footer"));
 const NotFound = React.lazy(() =>  import("./routes/NotFound"));
 
@@ -16,6 +17,7 @@ function App() {
       <div className="App">
         <Header />
         <ScrollToTop />
+        {/* <Contact /> */}
         <Switch>
               <Route exact path="/" component={Home} />
              <Route exact path="/menus" component={Menus} />

@@ -9,7 +9,7 @@
 body {
   width: 100%;
   background-color: #fcfcfc;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   color: #16161a;
 }
 
@@ -94,7 +94,7 @@ body .btn-bg {
   outline: none;
   border: none;
   text-decoration: none;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   color: #fcfcfc;
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
@@ -653,7 +653,7 @@ body .btn-bg {
 
 .menu-home-container h3 {
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   margin: 0 auto;
 }
@@ -689,7 +689,7 @@ body .btn-bg {
 
 .menu-home-container .menu-split .wrapper .text-wrapper .heading {
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   margin: 0;
 }
@@ -926,6 +926,12 @@ body .btn-bg {
   margin-bottom: 30px;
 }
 
+.booking-container .wrapper .text-wrapper .booking-info-p,
+.booking-container .wrapper .form-wrapper .booking-info-p {
+  font-size: 1.2rem;
+  line-height: 22px;
+}
+
 .booking-container .wrapper .text-wrapper p,
 .booking-container .wrapper .form-wrapper p {
   font-size: 1rem;
@@ -1033,7 +1039,7 @@ body .btn-bg {
   border-radius: 2px;
   outline: none;
   padding: 8px 5px;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 1.1rem;
   color: #fcfcfc;
 }
@@ -1095,7 +1101,7 @@ body .btn-bg {
   border-radius: 2px;
   position: relative;
   overflow: hidden;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   cursor: pointer;
 }
 
@@ -1248,7 +1254,7 @@ body .btn-bg {
   border-radius: 2px;
   position: relative;
   overflow: hidden;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   cursor: pointer;
 }
 
@@ -1299,7 +1305,7 @@ body .btn-bg {
 
 .information-container .wrapper .column h6 {
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #0f110d;
   margin-bottom: 25px;
   text-transform: uppercase;
@@ -1444,6 +1450,12 @@ body .btn-bg {
   }
 }
 
+@media (min-width: 1101px) {
+  .information-container .wrapper #openingTimes {
+    margin: 0 5%;
+  }
+}
+
 .whatson-container {
   width: 1100px;
   margin: 80px auto;
@@ -1452,7 +1464,7 @@ body .btn-bg {
 
 .whatson-container h5 {
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: 800;
   margin: 50px auto;
   text-align: center;
   text-transform: uppercase;
@@ -1551,7 +1563,7 @@ body .btn-bg {
 
 .whatson-container .carousel-wrapper li .text-wrapper button p {
   position: relative;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #fcfcfc;
@@ -1689,10 +1701,16 @@ body .btn-bg {
   border: 5px #912070 solid;
 }
 
-.map-container .wrapper p {
+.map-container .wrapper #stick-to-cursor {
+  width: 250px;
+  padding: 15px;
+  background-color: #0f110d;
+  border-radius: 12px;
+}
+
+.map-container .wrapper #stick-to-cursor p {
   color: #b4b5b3;
   width: 80%;
-  padding: 10px;
 }
 
 @media (max-width: 1100px) {
@@ -1746,7 +1764,7 @@ body .btn-bg {
 
 .menus-container .button-wrapper button p {
   position: relative;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 1rem;
   color: white;
   z-index: 2;
@@ -1889,7 +1907,7 @@ body .btn-bg {
 .gallery-image .img-hover .gallery-link p {
   position: relative;
   color: #fcfcfc;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   margin: 0;
 }
 
@@ -2011,7 +2029,7 @@ body .btn-bg {
   border: none;
   outline: none;
   color: #fcfcfc;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   width: 50px;
@@ -2055,7 +2073,7 @@ body .btn-bg {
 
 .gallery-popup .button-wrapper #exit-btn p {
   position: relative;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 1px;
@@ -2092,6 +2110,104 @@ body .btn-bg {
   .gallery-popup .button-wrapper {
     width: 100%;
   }
+}
+
+.contact-container {
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fcfcfc;
+  z-index: 50;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 6px 30px rgba(0, 0, 0, 0.18);
+          box-shadow: 3px 6px 30px rgba(0, 0, 0, 0.18);
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-container h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 0 20px;
+}
+
+.contact-container form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact-container form .input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact-container form .input-wrapper label {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #16161a;
+}
+
+.contact-container form .input-wrapper input,
+.contact-container form .input-wrapper textarea {
+  background-color: none;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #ebebeb;
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #16161a;
+  padding: 10px;
+}
+
+.contact-container form .input-wrapper textarea {
+  height: 200px;
+  resize: none;
+}
+
+.contact-container form input[type="submit"] {
+  margin-left: auto;
+  background: #912070;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  background-color: #912070;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fcfcfc;
+  cursor: pointer;
+  position: relative;
 }
 
 .footer {
