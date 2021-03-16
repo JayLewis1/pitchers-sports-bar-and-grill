@@ -10,10 +10,19 @@ const Contact = React.lazy(() => import("./components/contact/Contact"));
 const Footer  = React.lazy(() =>  import("./components/Footer"));
 const NotFound = React.lazy(() =>  import("./routes/NotFound"));
 
+
 function App() {
   return (
     <Router>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={
+      <div id="loading-container">
+        <span>
+          <h2>Pitchers</h2>
+          <p>Sports Bar & Grill</p> 
+          <img src="/assets/spinner/loading.gif" alt="Loading ..."/>
+        </span>
+      </div>
+      }>
       <div className="App">
         <Header />
         <ScrollToTop />

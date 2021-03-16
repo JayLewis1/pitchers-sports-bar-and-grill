@@ -1,27 +1,24 @@
 import React, { useState, useEffect } from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 
-const Header: React.FC = () => {
+interface ComponentState  {
+  history: any
+}
+
+const Header = ({history} : ComponentState) => {
   const [menusDown, setMenusDown] = useState(false);
   const [burgerMenu, setBurgerMenu] = useState(false)
   const [menuType, setTypeOnHover] = useState("")
-  const getWindowDimensions = () => {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height
-    };
-  }
-  const [ windowSize, setWindowSize] = useState(getWindowDimensions())
-
+  
   useEffect(() => {
-    const handleResize = () => {
-      setWindowSize(getWindowDimensions());
+    const unlisten = history.listen((location: any, action: any) => {
+      setMenusDown(false)
+      setBurgerMenu(false)
+    });
+    return () => {
+      unlisten();
     }
-    window.addEventListener('resize', handleResize);
-  }, [])
-
-
+  }, [history])
   const dropDownMenuSelection = () => {
     if(menusDown === false) {
       setMenusDown(true)
@@ -43,9 +40,9 @@ const Header: React.FC = () => {
   return (
     <header className="header">
         <div className="wrapper">
-          <span className="logo">
+          <NavLink to="/" className="logo">
             <img src="/assets/logo.svg" alt="Pitchers Logo"/>  
-          </span>  
+          </NavLink>  
           <nav>
             <ul>
               <li><NavLink activeClassName="link-active" exact to="/">Home</NavLink></li>
@@ -107,13 +104,11 @@ const Header: React.FC = () => {
             </button>
           </span>
           <nav className="responsive-menu" 
-              style={windowSize.width >= 620 || burgerMenu === false ? {height: "0px"} : { height: "300px"}}
+              style={ burgerMenu === false ? {height: "0px"} : { height: "250px"}}
                > 
             <ul>
               <li><NavLink activeClassName="link-active" exact to="/">Home</NavLink></li>
               <li><NavLink activeClassName="link-active" to="/gallery">Gallery</NavLink></li>
-              <li><a href="/#whatson">What's on</a></li>
-              <li><a href="/#info">Info</a></li>
               <li><NavLink activeClassName="link-active" to="/menus">Menus</NavLink></li>
               <li><NavLink activeClassName="link-active" exact to="/contact">Contact</NavLink></li>
             </ul>
@@ -122,4 +117,4 @@ const Header: React.FC = () => {
     </header>
   )
 }
-export default Header;
+export default withRouter(Header);

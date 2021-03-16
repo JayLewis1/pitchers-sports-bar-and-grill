@@ -25,6 +25,43 @@ body .btn-bg {
   z-index: 0;
 }
 
+#loading-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #0f110d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#loading-container span {
+  text-align: center;
+  margin-top: -100px;
+}
+
+#loading-container span h2 {
+  color: #fcfcfc;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+#loading-container span p {
+  color: #fcfcfc;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+#loading-container span img {
+  width: 80px;
+  height: 80px;
+}
+
 @media (max-width: 350px) {
   * {
     font-size: 12px;
@@ -120,9 +157,9 @@ body .btn-bg {
 .header .wrapper nav ul li .menus-drop-down {
   position: absolute;
   width: 270px;
-  background-color: #0f110d;
-  -webkit-box-shadow: 0 0px 10px rgba(100, 100, 100, 0.1);
-          box-shadow: 0 0px 10px rgba(100, 100, 100, 0.1);
+  background-color: #fcfcfc;
+  -webkit-box-shadow: 0 0px 30px rgba(100, 100, 100, 0.18);
+          box-shadow: 0 0px 30px rgba(100, 100, 100, 0.18);
   padding: 10px 0;
   border-radius: 3px;
   top: 60px;
@@ -136,8 +173,7 @@ body .btn-bg {
   width: 20px;
   height: 20px;
   position: absolute;
-  border: 2px red solid;
-  border-bottom: 10px solid #0f110d;
+  border-bottom: 10px solid #fcfcfc;
   border-top: 10px solid transparent;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
@@ -183,18 +219,20 @@ body .btn-bg {
   width: 30px;
   margin-right: 15px;
   margin-bottom: auto;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .header .wrapper nav ul li .menus-drop-down ul li a span h2 {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 5px;
+  color: #16161a;
 }
 
 .header .wrapper nav ul li .menus-drop-down ul li a span p {
   font-size: 0.9rem;
   font-weight: 300;
+  color: #16161a;
 }
 
 .header .wrapper nav ul li .menus-drop-down ul li a:hover {
@@ -205,14 +243,15 @@ body .btn-bg {
   background-color: #fcfcfc;
 }
 
-.header .wrapper nav ul li .menus-drop-down ul li:hover a {
+.header .wrapper nav ul li .menus-drop-down ul li:hover a h2,
+.header .wrapper nav ul li .menus-drop-down ul li:hover a p {
   color: #912070;
 }
 
 .header .wrapper nav ul .contact-link {
   margin-left: 35px;
   background-color: #912070;
-  padding: 8px 25px;
+  padding: 9px 25px;
   border-radius: 1px;
   position: relative;
   cursor: pointer;
@@ -223,6 +262,7 @@ body .btn-bg {
 .header .wrapper nav ul .contact-link a {
   position: relative;
   z-index: 2;
+  font-weight: 500;
 }
 
 .header .wrapper nav ul .contact-link:hover a {
@@ -308,6 +348,12 @@ body .btn-bg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media (min-width: 621px) {
+  .header .wrapper .responsive-menu {
+    display: none;
   }
 }
 
