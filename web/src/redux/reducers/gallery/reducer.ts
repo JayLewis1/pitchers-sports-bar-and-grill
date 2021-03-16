@@ -1,4 +1,4 @@
-import { GalleryTypes, Gallery, TOGGLE_GALLERY } from "../actions/types";
+import { GalleryTypes, Gallery, TOGGLE_GALLERY } from "../../actions/gallery/types";
 
 const initialState:Gallery = {
     toggle: false

@@ -259,13 +259,13 @@ body .btn-bg {
   z-index: 1;
 }
 
-.header .wrapper nav ul .contact-link a {
+.header .wrapper nav ul .contact-link p {
   position: relative;
   z-index: 2;
   font-weight: 500;
 }
 
-.header .wrapper nav ul .contact-link:hover a {
+.header .wrapper nav ul .contact-link:hover p {
   color: #912070;
   font-weight: 500;
 }
@@ -2159,7 +2159,7 @@ body .btn-bg {
 }
 
 .contact-container {
-  width: 80%;
+  width: 500px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2167,7 +2167,7 @@ body .btn-bg {
           transform: translate(-50%, -50%);
   background-color: #fcfcfc;
   z-index: 50;
-  border-radius: 15px;
+  border-radius: 3px;
   -webkit-box-shadow: 3px 6px 30px rgba(0, 0, 0, 0.18);
           box-shadow: 3px 6px 30px rgba(0, 0, 0, 0.18);
   padding: 25px;
@@ -2185,19 +2185,21 @@ body .btn-bg {
 
 .contact-container h3 {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .contact-container p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .contact-container form {
   width: 90%;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .contact-container form .input-wrapper {
@@ -2218,6 +2220,7 @@ body .btn-bg {
   font-weight: 500;
   margin-bottom: 5px;
   color: #16161a;
+  padding-left: 10px;
 }
 
 .contact-container form .input-wrapper input,
@@ -2225,26 +2228,57 @@ body .btn-bg {
   background-color: none;
   border: none;
   outline: none;
-  border-radius: 4px;
-  background-color: #ebebeb;
+  background: none;
+  border-radius: 0;
   font-family: "Karla", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
   color: #16161a;
   padding: 10px;
+  border-bottom: #ebebeb 2px solid;
 }
 
 .contact-container form .input-wrapper textarea {
-  height: 200px;
+  height: 100px;
   resize: none;
 }
 
+.contact-container form .input-wrapper input:focus {
+  border-bottom: #912070 2px solid;
+}
+
+.contact-container form .input-wrapper input::-webkit-input-placeholder, .contact-container form .input-wrapper textarea::-webkit-input-placeholder {
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #b4b5b3;
+}
+
+.contact-container form .input-wrapper input:-ms-input-placeholder, .contact-container form .input-wrapper textarea:-ms-input-placeholder {
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #b4b5b3;
+}
+
+.contact-container form .input-wrapper input::-ms-input-placeholder, .contact-container form .input-wrapper textarea::-ms-input-placeholder {
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #b4b5b3;
+}
+
+.contact-container form .input-wrapper input::placeholder, .contact-container form .input-wrapper textarea::placeholder {
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #b4b5b3;
+}
+
 .contact-container form input[type="submit"] {
-  margin-left: auto;
-  background: #912070;
   border: none;
   outline: none;
-  border-radius: 6px;
+  border-radius: 2px;
   padding: 5px 10px;
   background-color: #912070;
   font-family: "Karla", sans-serif;
@@ -2253,7 +2287,65 @@ body .btn-bg {
   text-transform: capitalize;
   color: #fcfcfc;
   cursor: pointer;
-  position: relative;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 40px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contact-container form input[type="submit"]:hover {
+  -webkit-box-shadow: 0px 0px 40px rgba(145, 32, 112, 0.18);
+          box-shadow: 0px 0px 40px rgba(145, 32, 112, 0.18);
+}
+
+.contact-container form input[type="submit"]:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.contact-container .cancel-btn {
+  background: none;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 40px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #16161a;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.contact-container .cancel-btn:hover {
+  -webkit-box-shadow: 0px 0px 40px rgba(145, 32, 112, 0.18);
+          box-shadow: 0px 0px 40px rgba(145, 32, 112, 0.18);
+}
+
+.contact-container .cancel-btn:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .footer {

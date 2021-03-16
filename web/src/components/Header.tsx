@@ -1,11 +1,29 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, withRouter } from "react-router-dom";
+// Redux
+import { connect, ConnectedProps } from "react-redux";
 
 interface ComponentState  {
-  history: any
+  application : {
+    toggle: boolean
+  }
 }
 
-const Header = ({history} : ComponentState) => {
+const mapState = (state:ComponentState ) => ({
+  toggle: state.application.toggle
+})
+const mapDispatch = {
+  toggleContact: (payload: boolean) => ({type: "CONTACT_TOGGLE", payload})
+}
+
+const connector = connect(mapState, mapDispatch);
+
+type PropsFromRedux = ConnectedProps<typeof connector>;
+type Props = PropsFromRedux & {
+  history : any
+};
+
+const Header = ({history, toggle, toggleContact} : Props) => {
   const [menusDown, setMenusDown] = useState(false);
   const [burgerMenu, setBurgerMenu] = useState(false)
   const [menuType, setTypeOnHover] = useState("")
@@ -34,6 +52,16 @@ const Header = ({history} : ComponentState) => {
     } else {
       setBurgerMenu(false)
     }
+  }
+
+  const toggleContactContainer = () => {
+    console.log("Clicked")
+    if(toggle === true) {
+      toggleContact(false);
+    } else {
+      toggleContact(true);
+    }
+   
   }
   
 
@@ -86,8 +114,9 @@ const Header = ({history} : ComponentState) => {
                 </div>
                 }</li>
               <li className="contact-link">
-                <span className="btn-bg"></span>
-                <a href="#booking">Contact</a>
+                <button onClick={() => toggleContactContainer()}>
+                  <span className="btn-bg"></span>
+                  <p>Contact</p></button>
               </li>
             </ul>
           </nav>
@@ -117,4 +146,4 @@ const Header = ({history} : ComponentState) => {
     </header>
   )
 }
-export default withRouter(Header);
+export default withRouter(connector(Header));

@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { connect, ConnectedProps } from "react-redux";
 // Components
 const Header = React.lazy(() =>  import("./components/Header"));
 const  Home = React.lazy(() =>  import("./routes/Home"));
@@ -10,8 +11,22 @@ const Contact = React.lazy(() => import("./components/contact/Contact"));
 const Footer  = React.lazy(() =>  import("./components/Footer"));
 const NotFound = React.lazy(() =>  import("./routes/NotFound"));
 
+interface ApplicationProps {
+  application : {
+    toggle: boolean
+  }
+}
 
-function App() {
+const mapState = (state:ApplicationProps ) => ({
+  toggle: state.application.toggle
+})
+
+const connector = connect(mapState);
+
+type PropsFromRedux = ConnectedProps<typeof connector>;
+type Props = PropsFromRedux;
+
+function App({ toggle }:Props) {
   return (
     <Router>
       <Suspense fallback={
@@ -25,8 +40,11 @@ function App() {
       }>
       <div className="App">
         <Header />
-        <ScrollToTop />
-        {/* <Contact /> */}
+        <ScrollToTop /> 
+        {
+          toggle === true &&  <Contact />
+        }
+      
         <Switch>
               <Route exact path="/" component={Home} />
              <Route exact path="/menus" component={Menus} />
@@ -41,4 +59,4 @@ function App() {
   );
 }
 
-export default App;
+export default connector(App);

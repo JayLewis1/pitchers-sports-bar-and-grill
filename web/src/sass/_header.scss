@@ -140,14 +140,14 @@
           overflow: hidden;
           z-index: 1;
 
-          a {
+          p {
             position: relative;
             z-index: 2;
             font-weight: 500;
           }
         }
         .contact-link:hover {
-          a {
+          p {
             color: $purple;
             font-weight: 500;
           }
