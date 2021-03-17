@@ -20,6 +20,9 @@ body {
     transition: 0.2s min-width;
     z-index: 0;
   }
+  .App {
+    z-index:1;
+  }
 }
 
 #loading-container {
@@ -29,9 +32,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index:0;
+  position: fixed;
+  top: 0;
+  left: 0;
   span {
     text-align: center;
     margin-top: -100px;
+    z-index: 100;
     h2 {
       color: $white;
       font-size: 2rem;
